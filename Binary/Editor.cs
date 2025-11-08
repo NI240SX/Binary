@@ -1623,7 +1623,24 @@ namespace Binary
 
 			this.EditorPropertyGrid.SelectedObject = selected;
 			this.EditorNodeInfo.Text = $"| Index: {e.Node.Index} | {e.Node.Nodes.Count} subnodes";
-		}
+
+            var splits = e.Node.FullPath.Split(this.EditorTreeView.PathSeparator);
+
+            if (splits.Length == 2)
+			{
+                var db = this.Profile.Find(splits[0]);
+                if (db != null)
+                {
+                    var manager = db.Database.GetManager(splits[1]);
+					if (manager != null && manager.GetType() == typeof(Nikki.Support.Undercover.Framework.DBModelPartManager))
+					{
+						this.EditorNodeInfo.Text = ((Nikki.Support.Undercover.Framework.DBModelPartManager)manager).UniquePartsUsed + this.EditorNodeInfo.Text;
+                    }
+
+                }
+            }
+
+        }
 
 		private void EditorTreeView_DoubleClick(object sender, EventArgs e)
 		{
