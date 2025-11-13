@@ -877,7 +877,7 @@ namespace Binary
 
 		private void EMSHelpAbout_Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("Binary by MaxHwoy v" + this.ProductVersion, "About", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			MessageBox.Show("Binercover - fork of Binary by MaxHwoy - version " + this.ProductVersion, "About", MessageBoxButtons.OK, MessageBoxIcon.Information);
 		}
 		
 		private void EMSHelpTutorials_Click(object sender, EventArgs e)
@@ -1196,7 +1196,7 @@ namespace Binary
 					CheckPathExists = true,
 					DefaultExt = ".bin",
 					Filter = "Binary Files|*.bin|Any Files|*.*",
-					FileName = cname,
+					FileName = cname + "-" + manager.Name,
 					OverwritePrompt = true,
 					SupportMultiDottedExtensions = true,
 					Title = "Select filename where collection should be exported",
@@ -1457,7 +1457,7 @@ namespace Binary
 
 				Configurations.Default.LaunchFile = filename;
 				Configurations.Default.Save();
-				this.Text = $"Binary by MaxHwoy - {this.Profile.GameSTR}";
+				this.Text = $"Binercover - fork of Binary by MaxHwoy - {this.Profile.GameSTR}";
 
 			#if !DEBUG
 			}
@@ -1763,23 +1763,35 @@ namespace Binary
 		{
 			var value = e.ChangedItem.Value.ToString();
 			if (String.IsNullOrEmpty(value)) value = empty;
+
+            var item = e.ChangedItem.Parent;
+            var subcommand = e.ChangedItem.Label;
+    //        while (!item.ToString().StartsWith("System.Windows.Forms.PropertyGridInternal.CategoryGridEntry"))
+    //        {
+				//subcommand = item.ToString().Split(" ")[1] + " " + subcommand;
+    //            item = item.Parent;
+    //        }
+
+
+            var str = this.GenerateEndCommand(eCommandType.update_collection, this.EditorTreeView.SelectedNode.FullPath,
+				subcommand, value);
 			
-			var str = this.GenerateEndCommand(eCommandType.update_collection, this.EditorTreeView.SelectedNode.FullPath,
-				e.ChangedItem.Label, value);
-			
-			this.WriteLineToEndCommandPrompt(str);
+			if (item.ToString().StartsWith("System.Windows.Forms.PropertyGridInternal.CategoryGridEntry")) this.WriteLineToEndCommandPrompt(str);
 			this._edited = true;
+
+			
 
 			if (e.ChangedItem.Label == "CollectionName")
 			{
 
 				this.EditorTreeView.SelectedNode.Text = e.ChangedItem.Value.ToString();
-				this.EditorPropertyGrid.Refresh();
-
+			
 			}
-		}
+            this.EditorPropertyGrid.Refresh();
 
-		private void EditorFindTextBox_TextChanged(object sender, EventArgs e)
+        }
+
+        private void EditorFindTextBox_TextChanged(object sender, EventArgs e)
 		{
 			this.RecursiveTreeHiglights(this.EditorFindTextBox.Text, this.EditorTreeView.Nodes);
 		}

@@ -805,7 +805,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MinimumSize = new System.Drawing.Size(912, 478);
             this.Name = "Editor";
-            this.Text = "Binary by MaxHwoy";
+            this.Text = "Binercover - fork of Binary by MaxHwoy";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Editor_FormClosing);
             this.Load += new System.EventHandler(this.Editor_Load);
             this.EditorMenuStrip.ResumeLayout(false);

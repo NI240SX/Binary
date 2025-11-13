@@ -130,12 +130,12 @@
 			// 
 			this.LabelBinary.AutoSize = true;
 			this.LabelBinary.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.LabelBinary.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+			this.LabelBinary.Font = new System.Drawing.Font("Microsoft Sans Serif", 20f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
 			this.LabelBinary.Location = new System.Drawing.Point(250, 18);
 			this.LabelBinary.Name = "LabelBinary";
 			this.LabelBinary.Size = new System.Drawing.Size(139, 46);
 			this.LabelBinary.TabIndex = 2;
-			this.LabelBinary.Text = "Binary";
+			this.LabelBinary.Text = "Binercover";
 			this.LabelBinary.Click += new System.EventHandler(this.LabelBinary_Click);
 			// 
 			// PictureBoxUpdates
@@ -224,7 +224,7 @@
 			this.MaximizeBox = false;
 			this.Name = "IntroUI";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Binary by MaxHwoy";
+			this.Text = "Binercover - fork of Binary by MaxHwoy";
 			this.IntroPanelModder.ResumeLayout(false);
 			this.IntroPanelModder.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.IntroPictureModder)).EndInit();
