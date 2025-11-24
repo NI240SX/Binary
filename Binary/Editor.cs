@@ -41,11 +41,12 @@ namespace Binary
 			this.InitializeComponent();
 			this.splitContainer2.FixedPanel = FixedPanel.Panel1;
 			this.ToggleTheme();
-		}
+            hideEmptyManagersToolStripMenuItem.Checked = Configurations.Default.HideEmptyManagers;
+        }
 
-		#region Theme
+        #region Theme
 
-		private void ToggleTheme()
+        private void ToggleTheme()
 		{
 			// Renderers
 			this.EditorStatusStrip.Renderer = new Theme.StatStripRenderer();
@@ -106,7 +107,9 @@ namespace Binary
 			this.EMSOptionsSpeedReflect.ForeColor = Theme.MenuItemForeColor;
 			this.EMSOptionsToggle.BackColor = Theme.MenuItemBackColor;
 			this.EMSOptionsToggle.ForeColor = Theme.MenuItemForeColor;
-			this.EMSScriptingProcess.BackColor = Theme.MenuItemBackColor;
+            hideEmptyManagersToolStripMenuItem.BackColor = Theme.MenuItemBackColor;
+			hideEmptyManagersToolStripMenuItem.ForeColor = Theme.MenuItemForeColor;
+            this.EMSScriptingProcess.BackColor = Theme.MenuItemBackColor;
 			this.EMSScriptingProcess.ForeColor = Theme.MenuItemForeColor;
 			this.EMSScriptingRunAll.BackColor = Theme.MenuItemBackColor;
 			this.EMSScriptingRunAll.ForeColor = Theme.MenuItemForeColor;
@@ -694,7 +697,23 @@ namespace Binary
 			this.ToggleTheme();
 		}
 
-		private void EMSScriptingProcess_Click(object sender, EventArgs e)
+        private void EMSOptionsHideEmptyMgr_Click(object sender, EventArgs e) {
+			Configurations.Default.HideEmptyManagers = !Configurations.Default.HideEmptyManagers;
+			Configurations.Default.Save();
+            hideEmptyManagersToolStripMenuItem.Checked = Configurations.Default.HideEmptyManagers;
+
+
+            foreach (var sdb in this.Profile) {
+                foreach (TreeNode n in this.EditorTreeView.Nodes) {
+                   if (n.FullPath == sdb.Filename) {
+                        Utils.toggleEmptyManagersInSDB(sdb, n);
+						break;
+                    }
+                }
+            }
+        }
+
+        private void EMSScriptingProcess_Click(object sender, EventArgs e)
 		{
 			if (this.Profile is null)
 			{
@@ -1507,12 +1526,14 @@ namespace Binary
 
 			foreach (var sdb in this.Profile)
 			{
+				var n = Utils.GetTreeNodesFromSDB(sdb);
+                this.EditorTreeView.Nodes.Add(n);
+				Utils.toggleEmptyManagersInSDB(sdb, n);
 
-				this.EditorTreeView.Nodes.Add(Utils.GetTreeNodesFromSDB(sdb));
 
-			}
+            }
 
-			if (!String.IsNullOrEmpty(selected))
+            if (!String.IsNullOrEmpty(selected))
 			{
 
 				this.RecursiveNodeSelection(selected, this.EditorTreeView.Nodes);
@@ -1642,7 +1663,7 @@ namespace Binary
 
         }
 
-		private void EditorTreeView_DoubleClick(object sender, EventArgs e)
+        private void EditorTreeView_DoubleClick(object sender, EventArgs e)
 		{
 			if (this.EditorButtonOpenEditor.Enabled)
 			{

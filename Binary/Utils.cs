@@ -15,6 +15,7 @@ using CoreExtensions.Text;
 using CoreExtensions.Management;
 using System.IO;
 using CoreExtensions.IO;
+using Binary.Properties;
 
 namespace Binary
 {
@@ -192,7 +193,43 @@ namespace Binary
 			return result;
 		}
 
-		public static TreeNode GetCollectionNodes(Collectable collection)
+		public static void toggleEmptyManagersInSDB(SynchronizedDatabase sdb, TreeNode sdbNode)
+		{
+			foreach (var manager in sdb.Database.Managers)
+			{
+				if (manager.Count == 0)
+				{
+					bool found=false;
+                    foreach (TreeNode node in sdbNode.Nodes)
+                    {
+						if (node != null && node.GetType() == typeof(TreeNode) && node.FullPath.EndsWith(manager.Name))
+						{
+                            if (Configurations.Default.HideEmptyManagers) sdbNode.Nodes.Remove(node);
+                            found = true;
+							break;
+						}
+
+                    }
+
+                    if (!found && !Configurations.Default.HideEmptyManagers)
+                    {
+                        var managenode = new TreeNode(manager.Name);
+
+                        foreach (Collectable collection in manager)
+                        {
+
+                            managenode.Nodes.Add(GetCollectionNodes(collection));
+
+                        }
+
+						sdbNode.Nodes.Insert(sdb.Database.Managers.IndexOf(manager), managenode);
+
+                    }
+                }
+			}
+        }
+
+        public static TreeNode GetCollectionNodes(Collectable collection)
 		{
 			var result = new TreeNode(collection.CollectionName);
 

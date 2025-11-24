@@ -20,848 +20,819 @@
 			base.Dispose(disposing);
 		}
 
-		#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Editor));
-            this.EditorMenuStrip = new System.Windows.Forms.MenuStrip();
-            this.EditorMenuStripMain = new System.Windows.Forms.ToolStripMenuItem();
-            this.EMSMainNewLauncher = new System.Windows.Forms.ToolStripMenuItem();
-            this.EMSMainLoadFiles = new System.Windows.Forms.ToolStripMenuItem();
-            this.EMSMainReloadFiles = new System.Windows.Forms.ToolStripMenuItem();
-            this.EMSMainSaveFiles = new System.Windows.Forms.ToolStripMenuItem();
-            this.EMSMainImportEndscript = new System.Windows.Forms.ToolStripMenuItem();
-            this.EMSMainExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.EditorMenuStripTools = new System.Windows.Forms.ToolStripMenuItem();
-            this.EMSToolsHasher = new System.Windows.Forms.ToolStripMenuItem();
-            this.EMSToolsRaider = new System.Windows.Forms.ToolStripMenuItem();
-            this.EMSToolsSwatcher = new System.Windows.Forms.ToolStripMenuItem();
-            this.EditorMenuStripOptions = new System.Windows.Forms.ToolStripMenuItem();
-            this.EMSOptionsCreate = new System.Windows.Forms.ToolStripMenuItem();
-            this.EMSOptionsRestore = new System.Windows.Forms.ToolStripMenuItem();
-            this.EMSOptionsUnlock = new System.Windows.Forms.ToolStripMenuItem();
-            this.EMSOptionsSpeedReflect = new System.Windows.Forms.ToolStripMenuItem();
-            this.EMSOptionsToggle = new System.Windows.Forms.ToolStripMenuItem();
-            this.EditorMenuStripScripting = new System.Windows.Forms.ToolStripMenuItem();
-            this.EMSScriptingProcess = new System.Windows.Forms.ToolStripMenuItem();
-            this.EMSScriptingRunAll = new System.Windows.Forms.ToolStripMenuItem();
-            this.EMSScriptingGenerate = new System.Windows.Forms.ToolStripMenuItem();
-            this.EMSScriptingClear = new System.Windows.Forms.ToolStripMenuItem();
-            this.EditorMenuStripWindows = new System.Windows.Forms.ToolStripMenuItem();
-            this.EMSWindowsRun = new System.Windows.Forms.ToolStripMenuItem();
-            this.EMSWindowsNew = new System.Windows.Forms.ToolStripMenuItem();
-            this.EditorMenuStripHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.EMSHelpAbout = new System.Windows.Forms.ToolStripMenuItem();
-            this.EMSHelpTutorials = new System.Windows.Forms.ToolStripMenuItem();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer4 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer5 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer6 = new System.Windows.Forms.SplitContainer();
-            this.EditorButtonAddNode = new System.Windows.Forms.Button();
-            this.splitContainer7 = new System.Windows.Forms.SplitContainer();
-            this.EditorButtonRemoveNode = new System.Windows.Forms.Button();
-            this.EditorButtonCopyNode = new System.Windows.Forms.Button();
-            this.splitContainer8 = new System.Windows.Forms.SplitContainer();
-            this.EditorButtonOpenEditor = new System.Windows.Forms.Button();
-            this.splitContainer9 = new System.Windows.Forms.SplitContainer();
-            this.EditorButtonExportNode = new System.Windows.Forms.Button();
-            this.EditorButtonImportNode = new System.Windows.Forms.Button();
-            this.splitContainer10 = new System.Windows.Forms.SplitContainer();
-            this.EditorFindTextBox = new System.Windows.Forms.TextBox();
-            this.EditorButtonScriptNode = new System.Windows.Forms.Button();
-            this.EditorTreeView = new System.Windows.Forms.TreeView();
-            this.EditorImageList = new System.Windows.Forms.ImageList(this.components);
-            this.splitContainer3 = new System.Windows.Forms.SplitContainer();
-            this.EditorPropertyGrid = new System.Windows.Forms.PropertyGrid();
-            this.EditorCommandPrompt = new System.Windows.Forms.TextBox();
-            this.EditorStatusStrip = new System.Windows.Forms.StatusStrip();
-            this.EditorStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.EditorNodeInfo = new System.Windows.Forms.ToolStripStatusLabel();
-            this.EditorMenuStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
-            this.splitContainer2.Panel1.SuspendLayout();
-            this.splitContainer2.Panel2.SuspendLayout();
-            this.splitContainer2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).BeginInit();
-            this.splitContainer4.Panel1.SuspendLayout();
-            this.splitContainer4.Panel2.SuspendLayout();
-            this.splitContainer4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer5)).BeginInit();
-            this.splitContainer5.Panel1.SuspendLayout();
-            this.splitContainer5.Panel2.SuspendLayout();
-            this.splitContainer5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer6)).BeginInit();
-            this.splitContainer6.Panel1.SuspendLayout();
-            this.splitContainer6.Panel2.SuspendLayout();
-            this.splitContainer6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).BeginInit();
-            this.splitContainer7.Panel1.SuspendLayout();
-            this.splitContainer7.Panel2.SuspendLayout();
-            this.splitContainer7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer8)).BeginInit();
-            this.splitContainer8.Panel1.SuspendLayout();
-            this.splitContainer8.Panel2.SuspendLayout();
-            this.splitContainer8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer9)).BeginInit();
-            this.splitContainer9.Panel1.SuspendLayout();
-            this.splitContainer9.Panel2.SuspendLayout();
-            this.splitContainer9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer10)).BeginInit();
-            this.splitContainer10.Panel1.SuspendLayout();
-            this.splitContainer10.Panel2.SuspendLayout();
-            this.splitContainer10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
-            this.splitContainer3.Panel1.SuspendLayout();
-            this.splitContainer3.Panel2.SuspendLayout();
-            this.splitContainer3.SuspendLayout();
-            this.EditorStatusStrip.SuspendLayout();
-            this.SuspendLayout();
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent() {
+            components = new System.ComponentModel.Container();
+            var resources = new System.ComponentModel.ComponentResourceManager(typeof(Editor));
+            EditorMenuStrip = new System.Windows.Forms.MenuStrip();
+            EditorMenuStripMain = new System.Windows.Forms.ToolStripMenuItem();
+            EMSMainNewLauncher = new System.Windows.Forms.ToolStripMenuItem();
+            EMSMainLoadFiles = new System.Windows.Forms.ToolStripMenuItem();
+            EMSMainReloadFiles = new System.Windows.Forms.ToolStripMenuItem();
+            EMSMainSaveFiles = new System.Windows.Forms.ToolStripMenuItem();
+            EMSMainImportEndscript = new System.Windows.Forms.ToolStripMenuItem();
+            EMSMainExit = new System.Windows.Forms.ToolStripMenuItem();
+            EditorMenuStripTools = new System.Windows.Forms.ToolStripMenuItem();
+            EMSToolsHasher = new System.Windows.Forms.ToolStripMenuItem();
+            EMSToolsRaider = new System.Windows.Forms.ToolStripMenuItem();
+            EMSToolsSwatcher = new System.Windows.Forms.ToolStripMenuItem();
+            EditorMenuStripOptions = new System.Windows.Forms.ToolStripMenuItem();
+            EMSOptionsCreate = new System.Windows.Forms.ToolStripMenuItem();
+            EMSOptionsRestore = new System.Windows.Forms.ToolStripMenuItem();
+            EMSOptionsUnlock = new System.Windows.Forms.ToolStripMenuItem();
+            EMSOptionsSpeedReflect = new System.Windows.Forms.ToolStripMenuItem();
+            EMSOptionsToggle = new System.Windows.Forms.ToolStripMenuItem();
+            hideEmptyManagersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            EditorMenuStripScripting = new System.Windows.Forms.ToolStripMenuItem();
+            EMSScriptingProcess = new System.Windows.Forms.ToolStripMenuItem();
+            EMSScriptingRunAll = new System.Windows.Forms.ToolStripMenuItem();
+            EMSScriptingGenerate = new System.Windows.Forms.ToolStripMenuItem();
+            EMSScriptingClear = new System.Windows.Forms.ToolStripMenuItem();
+            EditorMenuStripWindows = new System.Windows.Forms.ToolStripMenuItem();
+            EMSWindowsRun = new System.Windows.Forms.ToolStripMenuItem();
+            EMSWindowsNew = new System.Windows.Forms.ToolStripMenuItem();
+            EditorMenuStripHelp = new System.Windows.Forms.ToolStripMenuItem();
+            EMSHelpAbout = new System.Windows.Forms.ToolStripMenuItem();
+            EMSHelpTutorials = new System.Windows.Forms.ToolStripMenuItem();
+            splitContainer1 = new System.Windows.Forms.SplitContainer();
+            splitContainer2 = new System.Windows.Forms.SplitContainer();
+            splitContainer4 = new System.Windows.Forms.SplitContainer();
+            splitContainer5 = new System.Windows.Forms.SplitContainer();
+            splitContainer6 = new System.Windows.Forms.SplitContainer();
+            EditorButtonAddNode = new System.Windows.Forms.Button();
+            splitContainer7 = new System.Windows.Forms.SplitContainer();
+            EditorButtonRemoveNode = new System.Windows.Forms.Button();
+            EditorButtonCopyNode = new System.Windows.Forms.Button();
+            splitContainer8 = new System.Windows.Forms.SplitContainer();
+            EditorButtonOpenEditor = new System.Windows.Forms.Button();
+            splitContainer9 = new System.Windows.Forms.SplitContainer();
+            EditorButtonExportNode = new System.Windows.Forms.Button();
+            EditorButtonImportNode = new System.Windows.Forms.Button();
+            splitContainer10 = new System.Windows.Forms.SplitContainer();
+            EditorFindTextBox = new System.Windows.Forms.TextBox();
+            EditorButtonScriptNode = new System.Windows.Forms.Button();
+            EditorTreeView = new System.Windows.Forms.TreeView();
+            EditorImageList = new System.Windows.Forms.ImageList(components);
+            splitContainer3 = new System.Windows.Forms.SplitContainer();
+            EditorPropertyGrid = new System.Windows.Forms.PropertyGrid();
+            EditorCommandPrompt = new System.Windows.Forms.TextBox();
+            EditorStatusStrip = new System.Windows.Forms.StatusStrip();
+            EditorStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            EditorNodeInfo = new System.Windows.Forms.ToolStripStatusLabel();
+            EditorMenuStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
+            splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.Panel2.SuspendLayout();
+            splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer2).BeginInit();
+            splitContainer2.Panel1.SuspendLayout();
+            splitContainer2.Panel2.SuspendLayout();
+            splitContainer2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer4).BeginInit();
+            splitContainer4.Panel1.SuspendLayout();
+            splitContainer4.Panel2.SuspendLayout();
+            splitContainer4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer5).BeginInit();
+            splitContainer5.Panel1.SuspendLayout();
+            splitContainer5.Panel2.SuspendLayout();
+            splitContainer5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer6).BeginInit();
+            splitContainer6.Panel1.SuspendLayout();
+            splitContainer6.Panel2.SuspendLayout();
+            splitContainer6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer7).BeginInit();
+            splitContainer7.Panel1.SuspendLayout();
+            splitContainer7.Panel2.SuspendLayout();
+            splitContainer7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer8).BeginInit();
+            splitContainer8.Panel1.SuspendLayout();
+            splitContainer8.Panel2.SuspendLayout();
+            splitContainer8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer9).BeginInit();
+            splitContainer9.Panel1.SuspendLayout();
+            splitContainer9.Panel2.SuspendLayout();
+            splitContainer9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer10).BeginInit();
+            splitContainer10.Panel1.SuspendLayout();
+            splitContainer10.Panel2.SuspendLayout();
+            splitContainer10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer3).BeginInit();
+            splitContainer3.Panel1.SuspendLayout();
+            splitContainer3.Panel2.SuspendLayout();
+            splitContainer3.SuspendLayout();
+            EditorStatusStrip.SuspendLayout();
+            SuspendLayout();
             // 
             // EditorMenuStrip
             // 
-            this.EditorMenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.EditorMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.EditorMenuStripMain,
-            this.EditorMenuStripTools,
-            this.EditorMenuStripOptions,
-            this.EditorMenuStripScripting,
-            this.EditorMenuStripWindows,
-            this.EditorMenuStripHelp});
-            this.EditorMenuStrip.Location = new System.Drawing.Point(0, 0);
-            this.EditorMenuStrip.Name = "EditorMenuStrip";
-            this.EditorMenuStrip.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.EditorMenuStrip.Size = new System.Drawing.Size(904, 24);
-            this.EditorMenuStrip.TabIndex = 0;
+            EditorMenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            EditorMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { EditorMenuStripMain, EditorMenuStripTools, EditorMenuStripOptions, EditorMenuStripScripting, EditorMenuStripWindows, EditorMenuStripHelp });
+            EditorMenuStrip.Location = new System.Drawing.Point(0, 0);
+            EditorMenuStrip.Name = "EditorMenuStrip";
+            EditorMenuStrip.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
+            EditorMenuStrip.Size = new System.Drawing.Size(904, 24);
+            EditorMenuStrip.TabIndex = 0;
             // 
             // EditorMenuStripMain
             // 
-            this.EditorMenuStripMain.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.EMSMainNewLauncher,
-            this.EMSMainLoadFiles,
-            this.EMSMainReloadFiles,
-            this.EMSMainSaveFiles,
-            this.EMSMainImportEndscript,
-            this.EMSMainExit});
-            this.EditorMenuStripMain.Name = "EditorMenuStripMain";
-            this.EditorMenuStripMain.Size = new System.Drawing.Size(46, 20);
-            this.EditorMenuStripMain.Text = "Main";
+            EditorMenuStripMain.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { EMSMainNewLauncher, EMSMainLoadFiles, EMSMainReloadFiles, EMSMainSaveFiles, EMSMainImportEndscript, EMSMainExit });
+            EditorMenuStripMain.Name = "EditorMenuStripMain";
+            EditorMenuStripMain.Size = new System.Drawing.Size(46, 20);
+            EditorMenuStripMain.Text = "Main";
             // 
             // EMSMainNewLauncher
             // 
-            this.EMSMainNewLauncher.Name = "EMSMainNewLauncher";
-            this.EMSMainNewLauncher.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.EMSMainNewLauncher.Size = new System.Drawing.Size(199, 22);
-            this.EMSMainNewLauncher.Text = "New Launcher";
-            this.EMSMainNewLauncher.Click += new System.EventHandler(this.EMSMainNewLauncher_Click);
+            EMSMainNewLauncher.Name = "EMSMainNewLauncher";
+            EMSMainNewLauncher.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N;
+            EMSMainNewLauncher.Size = new System.Drawing.Size(199, 22);
+            EMSMainNewLauncher.Text = "New Launcher";
+            EMSMainNewLauncher.Click += EMSMainNewLauncher_Click;
             // 
             // EMSMainLoadFiles
             // 
-            this.EMSMainLoadFiles.Name = "EMSMainLoadFiles";
-            this.EMSMainLoadFiles.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.EMSMainLoadFiles.Size = new System.Drawing.Size(199, 22);
-            this.EMSMainLoadFiles.Text = "Load Files";
-            this.EMSMainLoadFiles.Click += new System.EventHandler(this.EMSMainLoadFiles_Click);
+            EMSMainLoadFiles.Name = "EMSMainLoadFiles";
+            EMSMainLoadFiles.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O;
+            EMSMainLoadFiles.Size = new System.Drawing.Size(199, 22);
+            EMSMainLoadFiles.Text = "Load Files";
+            EMSMainLoadFiles.Click += EMSMainLoadFiles_Click;
             // 
             // EMSMainReloadFiles
             // 
-            this.EMSMainReloadFiles.Enabled = false;
-            this.EMSMainReloadFiles.Name = "EMSMainReloadFiles";
-            this.EMSMainReloadFiles.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
-            this.EMSMainReloadFiles.Size = new System.Drawing.Size(199, 22);
-            this.EMSMainReloadFiles.Text = "Reload Files";
-            this.EMSMainReloadFiles.Click += new System.EventHandler(this.EMSMainReloadFiles_Click);
+            EMSMainReloadFiles.Enabled = false;
+            EMSMainReloadFiles.Name = "EMSMainReloadFiles";
+            EMSMainReloadFiles.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R;
+            EMSMainReloadFiles.Size = new System.Drawing.Size(199, 22);
+            EMSMainReloadFiles.Text = "Reload Files";
+            EMSMainReloadFiles.Click += EMSMainReloadFiles_Click;
             // 
             // EMSMainSaveFiles
             // 
-            this.EMSMainSaveFiles.Enabled = false;
-            this.EMSMainSaveFiles.Name = "EMSMainSaveFiles";
-            this.EMSMainSaveFiles.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.EMSMainSaveFiles.Size = new System.Drawing.Size(199, 22);
-            this.EMSMainSaveFiles.Text = "Save Files";
-            this.EMSMainSaveFiles.Click += new System.EventHandler(this.EMSMainSaveFiles_Click);
+            EMSMainSaveFiles.Enabled = false;
+            EMSMainSaveFiles.Name = "EMSMainSaveFiles";
+            EMSMainSaveFiles.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S;
+            EMSMainSaveFiles.Size = new System.Drawing.Size(199, 22);
+            EMSMainSaveFiles.Text = "Save Files";
+            EMSMainSaveFiles.Click += EMSMainSaveFiles_Click;
             // 
             // EMSMainImportEndscript
             // 
-            this.EMSMainImportEndscript.Enabled = false;
-            this.EMSMainImportEndscript.Name = "EMSMainImportEndscript";
-            this.EMSMainImportEndscript.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I)));
-            this.EMSMainImportEndscript.Size = new System.Drawing.Size(199, 22);
-            this.EMSMainImportEndscript.Text = "Import Endscript";
-            this.EMSMainImportEndscript.Click += new System.EventHandler(this.EMSMainImportEndscript_Click);
+            EMSMainImportEndscript.Enabled = false;
+            EMSMainImportEndscript.Name = "EMSMainImportEndscript";
+            EMSMainImportEndscript.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I;
+            EMSMainImportEndscript.Size = new System.Drawing.Size(199, 22);
+            EMSMainImportEndscript.Text = "Import Endscript";
+            EMSMainImportEndscript.Click += EMSMainImportEndscript_Click;
             // 
             // EMSMainExit
             // 
-            this.EMSMainExit.Name = "EMSMainExit";
-            this.EMSMainExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.EMSMainExit.Size = new System.Drawing.Size(199, 22);
-            this.EMSMainExit.Text = "Exit";
-            this.EMSMainExit.Click += new System.EventHandler(this.EMSMainExit_Click);
+            EMSMainExit.Name = "EMSMainExit";
+            EMSMainExit.ShortcutKeys = System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4;
+            EMSMainExit.Size = new System.Drawing.Size(199, 22);
+            EMSMainExit.Text = "Exit";
+            EMSMainExit.Click += EMSMainExit_Click;
             // 
             // EditorMenuStripTools
             // 
-            this.EditorMenuStripTools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.EMSToolsHasher,
-            this.EMSToolsRaider,
-            this.EMSToolsSwatcher});
-            this.EditorMenuStripTools.Name = "EditorMenuStripTools";
-            this.EditorMenuStripTools.Size = new System.Drawing.Size(47, 20);
-            this.EditorMenuStripTools.Text = "Tools";
+            EditorMenuStripTools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { EMSToolsHasher, EMSToolsRaider, EMSToolsSwatcher });
+            EditorMenuStripTools.Name = "EditorMenuStripTools";
+            EditorMenuStripTools.Size = new System.Drawing.Size(47, 20);
+            EditorMenuStripTools.Text = "Tools";
             // 
             // EMSToolsHasher
             // 
-            this.EMSToolsHasher.Name = "EMSToolsHasher";
-            this.EMSToolsHasher.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.H)));
-            this.EMSToolsHasher.Size = new System.Drawing.Size(158, 22);
-            this.EMSToolsHasher.Text = "Hasher";
-            this.EMSToolsHasher.Click += new System.EventHandler(this.EMSToolsHasher_Click);
+            EMSToolsHasher.Name = "EMSToolsHasher";
+            EMSToolsHasher.ShortcutKeys = System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.H;
+            EMSToolsHasher.Size = new System.Drawing.Size(158, 22);
+            EMSToolsHasher.Text = "Hasher";
+            EMSToolsHasher.Click += EMSToolsHasher_Click;
             // 
             // EMSToolsRaider
             // 
-            this.EMSToolsRaider.Name = "EMSToolsRaider";
-            this.EMSToolsRaider.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.R)));
-            this.EMSToolsRaider.Size = new System.Drawing.Size(158, 22);
-            this.EMSToolsRaider.Text = "Raider";
-            this.EMSToolsRaider.Click += new System.EventHandler(this.EMSToolsRaider_Click);
+            EMSToolsRaider.Name = "EMSToolsRaider";
+            EMSToolsRaider.ShortcutKeys = System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.R;
+            EMSToolsRaider.Size = new System.Drawing.Size(158, 22);
+            EMSToolsRaider.Text = "Raider";
+            EMSToolsRaider.Click += EMSToolsRaider_Click;
             // 
             // EMSToolsSwatcher
             // 
-            this.EMSToolsSwatcher.Name = "EMSToolsSwatcher";
-            this.EMSToolsSwatcher.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
-            this.EMSToolsSwatcher.Size = new System.Drawing.Size(158, 22);
-            this.EMSToolsSwatcher.Text = "Swatcher";
-            this.EMSToolsSwatcher.Click += new System.EventHandler(this.EMSToolsSwatcher_Click);
+            EMSToolsSwatcher.Name = "EMSToolsSwatcher";
+            EMSToolsSwatcher.ShortcutKeys = System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S;
+            EMSToolsSwatcher.Size = new System.Drawing.Size(158, 22);
+            EMSToolsSwatcher.Text = "Swatcher";
+            EMSToolsSwatcher.Click += EMSToolsSwatcher_Click;
             // 
             // EditorMenuStripOptions
             // 
-            this.EditorMenuStripOptions.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.EMSOptionsCreate,
-            this.EMSOptionsRestore,
-            this.EMSOptionsUnlock,
-            this.EMSOptionsSpeedReflect,
-            this.EMSOptionsToggle});
-            this.EditorMenuStripOptions.Name = "EditorMenuStripOptions";
-            this.EditorMenuStripOptions.Size = new System.Drawing.Size(61, 20);
-            this.EditorMenuStripOptions.Text = "Options";
+            EditorMenuStripOptions.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { EMSOptionsCreate, EMSOptionsRestore, EMSOptionsUnlock, EMSOptionsSpeedReflect, EMSOptionsToggle, hideEmptyManagersToolStripMenuItem });
+            EditorMenuStripOptions.Name = "EditorMenuStripOptions";
+            EditorMenuStripOptions.Size = new System.Drawing.Size(61, 20);
+            EditorMenuStripOptions.Text = "Options";
             // 
             // EMSOptionsCreate
             // 
-            this.EMSOptionsCreate.Enabled = false;
-            this.EMSOptionsCreate.Name = "EMSOptionsCreate";
-            this.EMSOptionsCreate.Size = new System.Drawing.Size(247, 22);
-            this.EMSOptionsCreate.Text = "Create Files Backups";
-            this.EMSOptionsCreate.Click += new System.EventHandler(this.EMSOptionsCreate_Click);
+            EMSOptionsCreate.Enabled = false;
+            EMSOptionsCreate.Name = "EMSOptionsCreate";
+            EMSOptionsCreate.Size = new System.Drawing.Size(247, 22);
+            EMSOptionsCreate.Text = "Create Files Backups";
+            EMSOptionsCreate.Click += EMSOptionsCreate_Click;
             // 
             // EMSOptionsRestore
             // 
-            this.EMSOptionsRestore.Enabled = false;
-            this.EMSOptionsRestore.Name = "EMSOptionsRestore";
-            this.EMSOptionsRestore.Size = new System.Drawing.Size(247, 22);
-            this.EMSOptionsRestore.Text = "Restore Files Backups";
-            this.EMSOptionsRestore.Click += new System.EventHandler(this.EMSOptionsRestore_Click);
+            EMSOptionsRestore.Enabled = false;
+            EMSOptionsRestore.Name = "EMSOptionsRestore";
+            EMSOptionsRestore.Size = new System.Drawing.Size(247, 22);
+            EMSOptionsRestore.Text = "Restore Files Backups";
+            EMSOptionsRestore.Click += EMSOptionsRestore_Click;
             // 
             // EMSOptionsUnlock
             // 
-            this.EMSOptionsUnlock.Enabled = false;
-            this.EMSOptionsUnlock.Name = "EMSOptionsUnlock";
-            this.EMSOptionsUnlock.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.U)));
-            this.EMSOptionsUnlock.Size = new System.Drawing.Size(247, 22);
-            this.EMSOptionsUnlock.Text = "Unlock Files For Modding";
-            this.EMSOptionsUnlock.Click += new System.EventHandler(this.EMSOptionsUnlock_Click);
+            EMSOptionsUnlock.Enabled = false;
+            EMSOptionsUnlock.Name = "EMSOptionsUnlock";
+            EMSOptionsUnlock.ShortcutKeys = System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.U;
+            EMSOptionsUnlock.Size = new System.Drawing.Size(247, 22);
+            EMSOptionsUnlock.Text = "Unlock Files For Modding";
+            EMSOptionsUnlock.Click += EMSOptionsUnlock_Click;
             // 
             // EMSOptionsSpeedReflect
             // 
-            this.EMSOptionsSpeedReflect.Enabled = false;
-            this.EMSOptionsSpeedReflect.Name = "EMSOptionsSpeedReflect";
-            this.EMSOptionsSpeedReflect.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A)));
-            this.EMSOptionsSpeedReflect.Size = new System.Drawing.Size(247, 22);
-            this.EMSOptionsSpeedReflect.Text = "Install SpeedReflect ASI";
-            this.EMSOptionsSpeedReflect.Click += new System.EventHandler(this.EMSOptionsSpeedReflect_Click);
+            EMSOptionsSpeedReflect.Enabled = false;
+            EMSOptionsSpeedReflect.Name = "EMSOptionsSpeedReflect";
+            EMSOptionsSpeedReflect.ShortcutKeys = System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A;
+            EMSOptionsSpeedReflect.Size = new System.Drawing.Size(247, 22);
+            EMSOptionsSpeedReflect.Text = "Install SpeedReflect ASI";
+            EMSOptionsSpeedReflect.Click += EMSOptionsSpeedReflect_Click;
             // 
             // EMSOptionsToggle
             // 
-            this.EMSOptionsToggle.Name = "EMSOptionsToggle";
-            this.EMSOptionsToggle.Size = new System.Drawing.Size(247, 22);
-            this.EMSOptionsToggle.Text = "Toggle Theme";
-            this.EMSOptionsToggle.Click += new System.EventHandler(this.EMSOptionsToggle_Click);
+            EMSOptionsToggle.Name = "EMSOptionsToggle";
+            EMSOptionsToggle.Size = new System.Drawing.Size(247, 22);
+            EMSOptionsToggle.Text = "Toggle Theme";
+            EMSOptionsToggle.Click += EMSOptionsToggle_Click;
+            // 
+            // hideEmptyManagersToolStripMenuItem
+            // 
+            hideEmptyManagersToolStripMenuItem.CheckOnClick = true;
+            hideEmptyManagersToolStripMenuItem.Name = "hideEmptyManagersToolStripMenuItem";
+            hideEmptyManagersToolStripMenuItem.Size = new System.Drawing.Size(247, 22);
+            hideEmptyManagersToolStripMenuItem.Text = "Hide Empty Managers";
+            hideEmptyManagersToolStripMenuItem.Click += EMSOptionsHideEmptyMgr_Click;
             // 
             // EditorMenuStripScripting
             // 
-            this.EditorMenuStripScripting.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.EMSScriptingProcess,
-            this.EMSScriptingRunAll,
-            this.EMSScriptingGenerate,
-            this.EMSScriptingClear});
-            this.EditorMenuStripScripting.Name = "EditorMenuStripScripting";
-            this.EditorMenuStripScripting.Size = new System.Drawing.Size(66, 20);
-            this.EditorMenuStripScripting.Text = "Scripting";
+            EditorMenuStripScripting.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { EMSScriptingProcess, EMSScriptingRunAll, EMSScriptingGenerate, EMSScriptingClear });
+            EditorMenuStripScripting.Name = "EditorMenuStripScripting";
+            EditorMenuStripScripting.Size = new System.Drawing.Size(66, 20);
+            EditorMenuStripScripting.Text = "Scripting";
             // 
             // EMSScriptingProcess
             // 
-            this.EMSScriptingProcess.Name = "EMSScriptingProcess";
-            this.EMSScriptingProcess.ShortcutKeys = System.Windows.Forms.Keys.F5;
-            this.EMSScriptingProcess.Size = new System.Drawing.Size(200, 22);
-            this.EMSScriptingProcess.Text = "Run Command";
-            this.EMSScriptingProcess.Click += new System.EventHandler(this.EMSScriptingProcess_Click);
+            EMSScriptingProcess.Name = "EMSScriptingProcess";
+            EMSScriptingProcess.ShortcutKeys = System.Windows.Forms.Keys.F5;
+            EMSScriptingProcess.Size = new System.Drawing.Size(200, 22);
+            EMSScriptingProcess.Text = "Run Command";
+            EMSScriptingProcess.Click += EMSScriptingProcess_Click;
             // 
             // EMSScriptingRunAll
             // 
-            this.EMSScriptingRunAll.Name = "EMSScriptingRunAll";
-            this.EMSScriptingRunAll.ShortcutKeys = System.Windows.Forms.Keys.F9;
-            this.EMSScriptingRunAll.Size = new System.Drawing.Size(200, 22);
-            this.EMSScriptingRunAll.Text = "Run All Commands";
-            this.EMSScriptingRunAll.Click += new System.EventHandler(this.EMSScriptingRunAll_Click);
+            EMSScriptingRunAll.Name = "EMSScriptingRunAll";
+            EMSScriptingRunAll.ShortcutKeys = System.Windows.Forms.Keys.F9;
+            EMSScriptingRunAll.Size = new System.Drawing.Size(200, 22);
+            EMSScriptingRunAll.Text = "Run All Commands";
+            EMSScriptingRunAll.Click += EMSScriptingRunAll_Click;
             // 
             // EMSScriptingGenerate
             // 
-            this.EMSScriptingGenerate.Name = "EMSScriptingGenerate";
-            this.EMSScriptingGenerate.ShortcutKeys = System.Windows.Forms.Keys.F6;
-            this.EMSScriptingGenerate.Size = new System.Drawing.Size(200, 22);
-            this.EMSScriptingGenerate.Text = "Generate Command";
-            this.EMSScriptingGenerate.Click += new System.EventHandler(this.EMSScriptingGenerate_Click);
+            EMSScriptingGenerate.Name = "EMSScriptingGenerate";
+            EMSScriptingGenerate.ShortcutKeys = System.Windows.Forms.Keys.F6;
+            EMSScriptingGenerate.Size = new System.Drawing.Size(200, 22);
+            EMSScriptingGenerate.Text = "Generate Command";
+            EMSScriptingGenerate.Click += EMSScriptingGenerate_Click;
             // 
             // EMSScriptingClear
             // 
-            this.EMSScriptingClear.Name = "EMSScriptingClear";
-            this.EMSScriptingClear.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
-            this.EMSScriptingClear.Size = new System.Drawing.Size(200, 22);
-            this.EMSScriptingClear.Text = "Clear Editor";
-            this.EMSScriptingClear.Click += new System.EventHandler(this.EMSScriptingClear_Click);
+            EMSScriptingClear.Name = "EMSScriptingClear";
+            EMSScriptingClear.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D;
+            EMSScriptingClear.Size = new System.Drawing.Size(200, 22);
+            EMSScriptingClear.Text = "Clear Editor";
+            EMSScriptingClear.Click += EMSScriptingClear_Click;
             // 
             // EditorMenuStripWindows
             // 
-            this.EditorMenuStripWindows.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.EMSWindowsRun,
-            this.EMSWindowsNew});
-            this.EditorMenuStripWindows.Name = "EditorMenuStripWindows";
-            this.EditorMenuStripWindows.Size = new System.Drawing.Size(68, 20);
-            this.EditorMenuStripWindows.Text = "Windows";
+            EditorMenuStripWindows.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { EMSWindowsRun, EMSWindowsNew });
+            EditorMenuStripWindows.Name = "EditorMenuStripWindows";
+            EditorMenuStripWindows.Size = new System.Drawing.Size(68, 20);
+            EditorMenuStripWindows.Text = "Windows";
             // 
             // EMSWindowsRun
             // 
-            this.EMSWindowsRun.Enabled = false;
-            this.EMSWindowsRun.Name = "EMSWindowsRun";
-            this.EMSWindowsRun.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
-            | System.Windows.Forms.Keys.G)));
-            this.EMSWindowsRun.Size = new System.Drawing.Size(214, 22);
-            this.EMSWindowsRun.Text = "Run the Game";
-            this.EMSWindowsRun.Click += new System.EventHandler(this.EMSWindowsRun_Click);
+            EMSWindowsRun.Enabled = false;
+            EMSWindowsRun.Name = "EMSWindowsRun";
+            EMSWindowsRun.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.G;
+            EMSWindowsRun.Size = new System.Drawing.Size(214, 22);
+            EMSWindowsRun.Text = "Run the Game";
+            EMSWindowsRun.Click += EMSWindowsRun_Click;
             // 
             // EMSWindowsNew
             // 
-            this.EMSWindowsNew.Name = "EMSWindowsNew";
-            this.EMSWindowsNew.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
-            | System.Windows.Forms.Keys.I)));
-            this.EMSWindowsNew.Size = new System.Drawing.Size(214, 22);
-            this.EMSWindowsNew.Text = "New Instance";
-            this.EMSWindowsNew.Click += new System.EventHandler(this.EMSWindowsNew_Click);
+            EMSWindowsNew.Name = "EMSWindowsNew";
+            EMSWindowsNew.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.I;
+            EMSWindowsNew.Size = new System.Drawing.Size(214, 22);
+            EMSWindowsNew.Text = "New Instance";
+            EMSWindowsNew.Click += EMSWindowsNew_Click;
             // 
             // EditorMenuStripHelp
             // 
-            this.EditorMenuStripHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.EMSHelpAbout,
-            this.EMSHelpTutorials});
-            this.EditorMenuStripHelp.Name = "EditorMenuStripHelp";
-            this.EditorMenuStripHelp.Size = new System.Drawing.Size(44, 20);
-            this.EditorMenuStripHelp.Text = "Help";
+            EditorMenuStripHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { EMSHelpAbout, EMSHelpTutorials });
+            EditorMenuStripHelp.Name = "EditorMenuStripHelp";
+            EditorMenuStripHelp.Size = new System.Drawing.Size(44, 20);
+            EditorMenuStripHelp.Text = "Help";
             // 
             // EMSHelpAbout
             // 
-            this.EMSHelpAbout.Name = "EMSHelpAbout";
-            this.EMSHelpAbout.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.EMSHelpAbout.Size = new System.Drawing.Size(161, 22);
-            this.EMSHelpAbout.Text = "About";
-            this.EMSHelpAbout.Click += new System.EventHandler(this.EMSHelpAbout_Click);
+            EMSHelpAbout.Name = "EMSHelpAbout";
+            EMSHelpAbout.ShortcutKeys = System.Windows.Forms.Keys.F1;
+            EMSHelpAbout.Size = new System.Drawing.Size(161, 22);
+            EMSHelpAbout.Text = "About";
+            EMSHelpAbout.Click += EMSHelpAbout_Click;
             // 
             // EMSHelpTutorials
             // 
-            this.EMSHelpTutorials.Name = "EMSHelpTutorials";
-            this.EMSHelpTutorials.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
-            this.EMSHelpTutorials.Size = new System.Drawing.Size(161, 22);
-            this.EMSHelpTutorials.Text = "Tutorials";
-            this.EMSHelpTutorials.Click += new System.EventHandler(this.EMSHelpTutorials_Click);
+            EMSHelpTutorials.Name = "EMSHelpTutorials";
+            EMSHelpTutorials.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T;
+            EMSHelpTutorials.Size = new System.Drawing.Size(161, 22);
+            EMSHelpTutorials.Text = "Tutorials";
+            EMSHelpTutorials.Click += EMSHelpTutorials_Click;
             // 
             // splitContainer1
             // 
-            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.splitContainer1.Location = new System.Drawing.Point(4, 28);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.splitContainer1.Name = "splitContainer1";
+            splitContainer1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            splitContainer1.Location = new System.Drawing.Point(4, 28);
+            splitContainer1.Margin = new System.Windows.Forms.Padding(0);
+            splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Panel1MinSize = 280;
+            splitContainer1.Panel1.Controls.Add(splitContainer2);
+            splitContainer1.Panel1MinSize = 280;
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.splitContainer3);
-            this.splitContainer1.Panel2MinSize = 400;
-            this.splitContainer1.Size = new System.Drawing.Size(889, 404);
-            this.splitContainer1.SplitterDistance = 295;
-            this.splitContainer1.SplitterWidth = 5;
-            this.splitContainer1.TabIndex = 1;
+            splitContainer1.Panel2.Controls.Add(splitContainer3);
+            splitContainer1.Panel2MinSize = 400;
+            splitContainer1.Size = new System.Drawing.Size(889, 404);
+            splitContainer1.SplitterDistance = 295;
+            splitContainer1.SplitterWidth = 5;
+            splitContainer1.TabIndex = 1;
             // 
             // splitContainer2
             // 
-            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer2.IsSplitterFixed = true;
-            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer2.Margin = new System.Windows.Forms.Padding(0);
-            this.splitContainer2.Name = "splitContainer2";
-            this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            splitContainer2.IsSplitterFixed = true;
+            splitContainer2.Location = new System.Drawing.Point(0, 0);
+            splitContainer2.Margin = new System.Windows.Forms.Padding(0);
+            splitContainer2.Name = "splitContainer2";
+            splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.Controls.Add(this.splitContainer4);
-            this.splitContainer2.Panel1MinSize = 102;
+            splitContainer2.Panel1.Controls.Add(splitContainer4);
+            splitContainer2.Panel1MinSize = 102;
             // 
             // splitContainer2.Panel2
             // 
-            this.splitContainer2.Panel2.Controls.Add(this.EditorTreeView);
-            this.splitContainer2.Size = new System.Drawing.Size(295, 404);
-            this.splitContainer2.SplitterDistance = 102;
-            this.splitContainer2.SplitterWidth = 5;
-            this.splitContainer2.TabIndex = 0;
+            splitContainer2.Panel2.Controls.Add(EditorTreeView);
+            splitContainer2.Size = new System.Drawing.Size(295, 404);
+            splitContainer2.SplitterDistance = 102;
+            splitContainer2.SplitterWidth = 5;
+            splitContainer2.TabIndex = 0;
             // 
             // splitContainer4
             // 
-            this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer4.IsSplitterFixed = true;
-            this.splitContainer4.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer4.Margin = new System.Windows.Forms.Padding(0);
-            this.splitContainer4.Name = "splitContainer4";
-            this.splitContainer4.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
+            splitContainer4.IsSplitterFixed = true;
+            splitContainer4.Location = new System.Drawing.Point(0, 0);
+            splitContainer4.Margin = new System.Windows.Forms.Padding(0);
+            splitContainer4.Name = "splitContainer4";
+            splitContainer4.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
             // splitContainer4.Panel1
             // 
-            this.splitContainer4.Panel1.Controls.Add(this.splitContainer5);
+            splitContainer4.Panel1.Controls.Add(splitContainer5);
             // 
             // splitContainer4.Panel2
             // 
-            this.splitContainer4.Panel2.Controls.Add(this.splitContainer10);
-            this.splitContainer4.Size = new System.Drawing.Size(295, 102);
-            this.splitContainer4.SplitterDistance = 64;
-            this.splitContainer4.SplitterWidth = 5;
-            this.splitContainer4.TabIndex = 0;
+            splitContainer4.Panel2.Controls.Add(splitContainer10);
+            splitContainer4.Size = new System.Drawing.Size(295, 102);
+            splitContainer4.SplitterDistance = 64;
+            splitContainer4.SplitterWidth = 5;
+            splitContainer4.TabIndex = 0;
             // 
             // splitContainer5
             // 
-            this.splitContainer5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer5.IsSplitterFixed = true;
-            this.splitContainer5.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer5.Margin = new System.Windows.Forms.Padding(0);
-            this.splitContainer5.Name = "splitContainer5";
-            this.splitContainer5.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            splitContainer5.Dock = System.Windows.Forms.DockStyle.Fill;
+            splitContainer5.IsSplitterFixed = true;
+            splitContainer5.Location = new System.Drawing.Point(0, 0);
+            splitContainer5.Margin = new System.Windows.Forms.Padding(0);
+            splitContainer5.Name = "splitContainer5";
+            splitContainer5.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
             // splitContainer5.Panel1
             // 
-            this.splitContainer5.Panel1.Controls.Add(this.splitContainer6);
+            splitContainer5.Panel1.Controls.Add(splitContainer6);
             // 
             // splitContainer5.Panel2
             // 
-            this.splitContainer5.Panel2.Controls.Add(this.splitContainer8);
-            this.splitContainer5.Size = new System.Drawing.Size(295, 64);
-            this.splitContainer5.SplitterDistance = 30;
-            this.splitContainer5.SplitterWidth = 1;
-            this.splitContainer5.TabIndex = 0;
+            splitContainer5.Panel2.Controls.Add(splitContainer8);
+            splitContainer5.Size = new System.Drawing.Size(295, 64);
+            splitContainer5.SplitterDistance = 30;
+            splitContainer5.SplitterWidth = 1;
+            splitContainer5.TabIndex = 0;
             // 
             // splitContainer6
             // 
-            this.splitContainer6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer6.IsSplitterFixed = true;
-            this.splitContainer6.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer6.Margin = new System.Windows.Forms.Padding(0);
-            this.splitContainer6.Name = "splitContainer6";
+            splitContainer6.Dock = System.Windows.Forms.DockStyle.Fill;
+            splitContainer6.IsSplitterFixed = true;
+            splitContainer6.Location = new System.Drawing.Point(0, 0);
+            splitContainer6.Margin = new System.Windows.Forms.Padding(0);
+            splitContainer6.Name = "splitContainer6";
             // 
             // splitContainer6.Panel1
             // 
-            this.splitContainer6.Panel1.Controls.Add(this.EditorButtonAddNode);
+            splitContainer6.Panel1.Controls.Add(EditorButtonAddNode);
             // 
             // splitContainer6.Panel2
             // 
-            this.splitContainer6.Panel2.Controls.Add(this.splitContainer7);
-            this.splitContainer6.Size = new System.Drawing.Size(295, 30);
-            this.splitContainer6.SplitterDistance = 95;
-            this.splitContainer6.SplitterWidth = 1;
-            this.splitContainer6.TabIndex = 0;
+            splitContainer6.Panel2.Controls.Add(splitContainer7);
+            splitContainer6.Size = new System.Drawing.Size(295, 30);
+            splitContainer6.SplitterDistance = 95;
+            splitContainer6.SplitterWidth = 1;
+            splitContainer6.TabIndex = 0;
             // 
             // EditorButtonAddNode
             // 
-            this.EditorButtonAddNode.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.EditorButtonAddNode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EditorButtonAddNode.Enabled = false;
-            this.EditorButtonAddNode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditorButtonAddNode.Location = new System.Drawing.Point(0, 0);
-            this.EditorButtonAddNode.Margin = new System.Windows.Forms.Padding(0);
-            this.EditorButtonAddNode.Name = "EditorButtonAddNode";
-            this.EditorButtonAddNode.Size = new System.Drawing.Size(95, 30);
-            this.EditorButtonAddNode.TabIndex = 0;
-            this.EditorButtonAddNode.Text = "Add Node";
-            this.EditorButtonAddNode.UseVisualStyleBackColor = false;
-            this.EditorButtonAddNode.Click += new System.EventHandler(this.EditorButtonAddNode_Click);
+            EditorButtonAddNode.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            EditorButtonAddNode.Dock = System.Windows.Forms.DockStyle.Fill;
+            EditorButtonAddNode.Enabled = false;
+            EditorButtonAddNode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            EditorButtonAddNode.Location = new System.Drawing.Point(0, 0);
+            EditorButtonAddNode.Margin = new System.Windows.Forms.Padding(0);
+            EditorButtonAddNode.Name = "EditorButtonAddNode";
+            EditorButtonAddNode.Size = new System.Drawing.Size(95, 30);
+            EditorButtonAddNode.TabIndex = 0;
+            EditorButtonAddNode.Text = "Add Node";
+            EditorButtonAddNode.UseVisualStyleBackColor = false;
+            EditorButtonAddNode.Click += EditorButtonAddNode_Click;
             // 
             // splitContainer7
             // 
-            this.splitContainer7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer7.IsSplitterFixed = true;
-            this.splitContainer7.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer7.Margin = new System.Windows.Forms.Padding(0);
-            this.splitContainer7.Name = "splitContainer7";
+            splitContainer7.Dock = System.Windows.Forms.DockStyle.Fill;
+            splitContainer7.IsSplitterFixed = true;
+            splitContainer7.Location = new System.Drawing.Point(0, 0);
+            splitContainer7.Margin = new System.Windows.Forms.Padding(0);
+            splitContainer7.Name = "splitContainer7";
             // 
             // splitContainer7.Panel1
             // 
-            this.splitContainer7.Panel1.Controls.Add(this.EditorButtonRemoveNode);
+            splitContainer7.Panel1.Controls.Add(EditorButtonRemoveNode);
             // 
             // splitContainer7.Panel2
             // 
-            this.splitContainer7.Panel2.Controls.Add(this.EditorButtonCopyNode);
-            this.splitContainer7.Size = new System.Drawing.Size(199, 30);
-            this.splitContainer7.SplitterDistance = 97;
-            this.splitContainer7.SplitterWidth = 1;
-            this.splitContainer7.TabIndex = 0;
+            splitContainer7.Panel2.Controls.Add(EditorButtonCopyNode);
+            splitContainer7.Size = new System.Drawing.Size(199, 30);
+            splitContainer7.SplitterDistance = 97;
+            splitContainer7.SplitterWidth = 1;
+            splitContainer7.TabIndex = 0;
             // 
             // EditorButtonRemoveNode
             // 
-            this.EditorButtonRemoveNode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EditorButtonRemoveNode.Enabled = false;
-            this.EditorButtonRemoveNode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditorButtonRemoveNode.Location = new System.Drawing.Point(0, 0);
-            this.EditorButtonRemoveNode.Margin = new System.Windows.Forms.Padding(0);
-            this.EditorButtonRemoveNode.Name = "EditorButtonRemoveNode";
-            this.EditorButtonRemoveNode.Size = new System.Drawing.Size(97, 30);
-            this.EditorButtonRemoveNode.TabIndex = 1;
-            this.EditorButtonRemoveNode.Text = "Remove Node";
-            this.EditorButtonRemoveNode.UseVisualStyleBackColor = false;
-            this.EditorButtonRemoveNode.Click += new System.EventHandler(this.EditorButtonRemoveNode_Click);
+            EditorButtonRemoveNode.Dock = System.Windows.Forms.DockStyle.Fill;
+            EditorButtonRemoveNode.Enabled = false;
+            EditorButtonRemoveNode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            EditorButtonRemoveNode.Location = new System.Drawing.Point(0, 0);
+            EditorButtonRemoveNode.Margin = new System.Windows.Forms.Padding(0);
+            EditorButtonRemoveNode.Name = "EditorButtonRemoveNode";
+            EditorButtonRemoveNode.Size = new System.Drawing.Size(97, 30);
+            EditorButtonRemoveNode.TabIndex = 1;
+            EditorButtonRemoveNode.Text = "Remove Node";
+            EditorButtonRemoveNode.UseVisualStyleBackColor = false;
+            EditorButtonRemoveNode.Click += EditorButtonRemoveNode_Click;
             // 
             // EditorButtonCopyNode
             // 
-            this.EditorButtonCopyNode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EditorButtonCopyNode.Enabled = false;
-            this.EditorButtonCopyNode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditorButtonCopyNode.Location = new System.Drawing.Point(0, 0);
-            this.EditorButtonCopyNode.Margin = new System.Windows.Forms.Padding(0);
-            this.EditorButtonCopyNode.Name = "EditorButtonCopyNode";
-            this.EditorButtonCopyNode.Size = new System.Drawing.Size(101, 30);
-            this.EditorButtonCopyNode.TabIndex = 1;
-            this.EditorButtonCopyNode.Text = "Copy Node";
-            this.EditorButtonCopyNode.UseVisualStyleBackColor = false;
-            this.EditorButtonCopyNode.Click += new System.EventHandler(this.EditorButtonCopyNode_Click);
+            EditorButtonCopyNode.Dock = System.Windows.Forms.DockStyle.Fill;
+            EditorButtonCopyNode.Enabled = false;
+            EditorButtonCopyNode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            EditorButtonCopyNode.Location = new System.Drawing.Point(0, 0);
+            EditorButtonCopyNode.Margin = new System.Windows.Forms.Padding(0);
+            EditorButtonCopyNode.Name = "EditorButtonCopyNode";
+            EditorButtonCopyNode.Size = new System.Drawing.Size(101, 30);
+            EditorButtonCopyNode.TabIndex = 1;
+            EditorButtonCopyNode.Text = "Copy Node";
+            EditorButtonCopyNode.UseVisualStyleBackColor = false;
+            EditorButtonCopyNode.Click += EditorButtonCopyNode_Click;
             // 
             // splitContainer8
             // 
-            this.splitContainer8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer8.IsSplitterFixed = true;
-            this.splitContainer8.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer8.Margin = new System.Windows.Forms.Padding(0);
-            this.splitContainer8.Name = "splitContainer8";
+            splitContainer8.Dock = System.Windows.Forms.DockStyle.Fill;
+            splitContainer8.IsSplitterFixed = true;
+            splitContainer8.Location = new System.Drawing.Point(0, 0);
+            splitContainer8.Margin = new System.Windows.Forms.Padding(0);
+            splitContainer8.Name = "splitContainer8";
             // 
             // splitContainer8.Panel1
             // 
-            this.splitContainer8.Panel1.Controls.Add(this.EditorButtonOpenEditor);
+            splitContainer8.Panel1.Controls.Add(EditorButtonOpenEditor);
             // 
             // splitContainer8.Panel2
             // 
-            this.splitContainer8.Panel2.Controls.Add(this.splitContainer9);
-            this.splitContainer8.Size = new System.Drawing.Size(295, 33);
-            this.splitContainer8.SplitterDistance = 95;
-            this.splitContainer8.SplitterWidth = 1;
-            this.splitContainer8.TabIndex = 0;
+            splitContainer8.Panel2.Controls.Add(splitContainer9);
+            splitContainer8.Size = new System.Drawing.Size(295, 33);
+            splitContainer8.SplitterDistance = 95;
+            splitContainer8.SplitterWidth = 1;
+            splitContainer8.TabIndex = 0;
             // 
             // EditorButtonOpenEditor
             // 
-            this.EditorButtonOpenEditor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EditorButtonOpenEditor.Enabled = false;
-            this.EditorButtonOpenEditor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditorButtonOpenEditor.Location = new System.Drawing.Point(0, 0);
-            this.EditorButtonOpenEditor.Margin = new System.Windows.Forms.Padding(0);
-            this.EditorButtonOpenEditor.Name = "EditorButtonOpenEditor";
-            this.EditorButtonOpenEditor.Size = new System.Drawing.Size(95, 33);
-            this.EditorButtonOpenEditor.TabIndex = 1;
-            this.EditorButtonOpenEditor.Text = "Open Editor";
-            this.EditorButtonOpenEditor.UseVisualStyleBackColor = false;
-            this.EditorButtonOpenEditor.Click += new System.EventHandler(this.EditorButtonOpenEditor_Click);
+            EditorButtonOpenEditor.Dock = System.Windows.Forms.DockStyle.Fill;
+            EditorButtonOpenEditor.Enabled = false;
+            EditorButtonOpenEditor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            EditorButtonOpenEditor.Location = new System.Drawing.Point(0, 0);
+            EditorButtonOpenEditor.Margin = new System.Windows.Forms.Padding(0);
+            EditorButtonOpenEditor.Name = "EditorButtonOpenEditor";
+            EditorButtonOpenEditor.Size = new System.Drawing.Size(95, 33);
+            EditorButtonOpenEditor.TabIndex = 1;
+            EditorButtonOpenEditor.Text = "Open Editor";
+            EditorButtonOpenEditor.UseVisualStyleBackColor = false;
+            EditorButtonOpenEditor.Click += EditorButtonOpenEditor_Click;
             // 
             // splitContainer9
             // 
-            this.splitContainer9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer9.IsSplitterFixed = true;
-            this.splitContainer9.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer9.Margin = new System.Windows.Forms.Padding(0);
-            this.splitContainer9.Name = "splitContainer9";
+            splitContainer9.Dock = System.Windows.Forms.DockStyle.Fill;
+            splitContainer9.IsSplitterFixed = true;
+            splitContainer9.Location = new System.Drawing.Point(0, 0);
+            splitContainer9.Margin = new System.Windows.Forms.Padding(0);
+            splitContainer9.Name = "splitContainer9";
             // 
             // splitContainer9.Panel1
             // 
-            this.splitContainer9.Panel1.Controls.Add(this.EditorButtonExportNode);
+            splitContainer9.Panel1.Controls.Add(EditorButtonExportNode);
             // 
             // splitContainer9.Panel2
             // 
-            this.splitContainer9.Panel2.Controls.Add(this.EditorButtonImportNode);
-            this.splitContainer9.Size = new System.Drawing.Size(199, 33);
-            this.splitContainer9.SplitterDistance = 97;
-            this.splitContainer9.SplitterWidth = 1;
-            this.splitContainer9.TabIndex = 0;
+            splitContainer9.Panel2.Controls.Add(EditorButtonImportNode);
+            splitContainer9.Size = new System.Drawing.Size(199, 33);
+            splitContainer9.SplitterDistance = 97;
+            splitContainer9.SplitterWidth = 1;
+            splitContainer9.TabIndex = 0;
             // 
             // EditorButtonExportNode
             // 
-            this.EditorButtonExportNode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EditorButtonExportNode.Enabled = false;
-            this.EditorButtonExportNode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditorButtonExportNode.Location = new System.Drawing.Point(0, 0);
-            this.EditorButtonExportNode.Margin = new System.Windows.Forms.Padding(0);
-            this.EditorButtonExportNode.Name = "EditorButtonExportNode";
-            this.EditorButtonExportNode.Size = new System.Drawing.Size(97, 33);
-            this.EditorButtonExportNode.TabIndex = 1;
-            this.EditorButtonExportNode.Text = "Export Node";
-            this.EditorButtonExportNode.UseVisualStyleBackColor = false;
-            this.EditorButtonExportNode.Click += new System.EventHandler(this.EditorButtonExportNode_Click);
+            EditorButtonExportNode.Dock = System.Windows.Forms.DockStyle.Fill;
+            EditorButtonExportNode.Enabled = false;
+            EditorButtonExportNode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            EditorButtonExportNode.Location = new System.Drawing.Point(0, 0);
+            EditorButtonExportNode.Margin = new System.Windows.Forms.Padding(0);
+            EditorButtonExportNode.Name = "EditorButtonExportNode";
+            EditorButtonExportNode.Size = new System.Drawing.Size(97, 33);
+            EditorButtonExportNode.TabIndex = 1;
+            EditorButtonExportNode.Text = "Export Node";
+            EditorButtonExportNode.UseVisualStyleBackColor = false;
+            EditorButtonExportNode.Click += EditorButtonExportNode_Click;
             // 
             // EditorButtonImportNode
             // 
-            this.EditorButtonImportNode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EditorButtonImportNode.Enabled = false;
-            this.EditorButtonImportNode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditorButtonImportNode.Location = new System.Drawing.Point(0, 0);
-            this.EditorButtonImportNode.Margin = new System.Windows.Forms.Padding(0);
-            this.EditorButtonImportNode.Name = "EditorButtonImportNode";
-            this.EditorButtonImportNode.Size = new System.Drawing.Size(101, 33);
-            this.EditorButtonImportNode.TabIndex = 1;
-            this.EditorButtonImportNode.Text = "Import Node";
-            this.EditorButtonImportNode.UseVisualStyleBackColor = false;
-            this.EditorButtonImportNode.Click += new System.EventHandler(this.EditorButtonImportNode_Click);
+            EditorButtonImportNode.Dock = System.Windows.Forms.DockStyle.Fill;
+            EditorButtonImportNode.Enabled = false;
+            EditorButtonImportNode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            EditorButtonImportNode.Location = new System.Drawing.Point(0, 0);
+            EditorButtonImportNode.Margin = new System.Windows.Forms.Padding(0);
+            EditorButtonImportNode.Name = "EditorButtonImportNode";
+            EditorButtonImportNode.Size = new System.Drawing.Size(101, 33);
+            EditorButtonImportNode.TabIndex = 1;
+            EditorButtonImportNode.Text = "Import Node";
+            EditorButtonImportNode.UseVisualStyleBackColor = false;
+            EditorButtonImportNode.Click += EditorButtonImportNode_Click;
             // 
             // splitContainer10
             // 
-            this.splitContainer10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer10.IsSplitterFixed = true;
-            this.splitContainer10.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer10.Margin = new System.Windows.Forms.Padding(0);
-            this.splitContainer10.Name = "splitContainer10";
+            splitContainer10.Dock = System.Windows.Forms.DockStyle.Fill;
+            splitContainer10.IsSplitterFixed = true;
+            splitContainer10.Location = new System.Drawing.Point(0, 0);
+            splitContainer10.Margin = new System.Windows.Forms.Padding(0);
+            splitContainer10.Name = "splitContainer10";
             // 
             // splitContainer10.Panel1
             // 
-            this.splitContainer10.Panel1.Controls.Add(this.EditorFindTextBox);
+            splitContainer10.Panel1.Controls.Add(EditorFindTextBox);
             // 
             // splitContainer10.Panel2
             // 
-            this.splitContainer10.Panel2.Controls.Add(this.EditorButtonScriptNode);
-            this.splitContainer10.Size = new System.Drawing.Size(295, 33);
-            this.splitContainer10.SplitterDistance = 195;
-            this.splitContainer10.SplitterWidth = 1;
-            this.splitContainer10.TabIndex = 0;
+            splitContainer10.Panel2.Controls.Add(EditorButtonScriptNode);
+            splitContainer10.Size = new System.Drawing.Size(295, 33);
+            splitContainer10.SplitterDistance = 195;
+            splitContainer10.SplitterWidth = 1;
+            splitContainer10.TabIndex = 0;
             // 
             // EditorFindTextBox
             // 
-            this.EditorFindTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.EditorFindTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EditorFindTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.EditorFindTextBox.Location = new System.Drawing.Point(0, 3);
-            this.EditorFindTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.EditorFindTextBox.Name = "EditorFindTextBox";
-            this.EditorFindTextBox.Size = new System.Drawing.Size(193, 24);
-            this.EditorFindTextBox.TabIndex = 0;
-            this.EditorFindTextBox.TextChanged += new System.EventHandler(this.EditorFindTextBox_TextChanged);
+            EditorFindTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            EditorFindTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            EditorFindTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            EditorFindTextBox.Location = new System.Drawing.Point(0, 3);
+            EditorFindTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            EditorFindTextBox.Name = "EditorFindTextBox";
+            EditorFindTextBox.Size = new System.Drawing.Size(193, 24);
+            EditorFindTextBox.TabIndex = 0;
+            EditorFindTextBox.TextChanged += EditorFindTextBox_TextChanged;
             // 
             // EditorButtonScriptNode
             // 
-            this.EditorButtonScriptNode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EditorButtonScriptNode.Enabled = false;
-            this.EditorButtonScriptNode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditorButtonScriptNode.Location = new System.Drawing.Point(0, 0);
-            this.EditorButtonScriptNode.Margin = new System.Windows.Forms.Padding(0);
-            this.EditorButtonScriptNode.Name = "EditorButtonScriptNode";
-            this.EditorButtonScriptNode.Size = new System.Drawing.Size(99, 33);
-            this.EditorButtonScriptNode.TabIndex = 2;
-            this.EditorButtonScriptNode.Text = "Script Node";
-            this.EditorButtonScriptNode.UseVisualStyleBackColor = false;
-            this.EditorButtonScriptNode.Click += new System.EventHandler(this.EditorButtonScriptNode_Click);
+            EditorButtonScriptNode.Dock = System.Windows.Forms.DockStyle.Fill;
+            EditorButtonScriptNode.Enabled = false;
+            EditorButtonScriptNode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            EditorButtonScriptNode.Location = new System.Drawing.Point(0, 0);
+            EditorButtonScriptNode.Margin = new System.Windows.Forms.Padding(0);
+            EditorButtonScriptNode.Name = "EditorButtonScriptNode";
+            EditorButtonScriptNode.Size = new System.Drawing.Size(99, 33);
+            EditorButtonScriptNode.TabIndex = 2;
+            EditorButtonScriptNode.Text = "Script Node";
+            EditorButtonScriptNode.UseVisualStyleBackColor = false;
+            EditorButtonScriptNode.Click += EditorButtonScriptNode_Click;
             // 
             // EditorTreeView
             // 
-            this.EditorTreeView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EditorTreeView.ImageIndex = 0;
-            this.EditorTreeView.ImageList = this.EditorImageList;
-            this.EditorTreeView.Location = new System.Drawing.Point(0, 0);
-            this.EditorTreeView.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.EditorTreeView.Name = "EditorTreeView";
-            this.EditorTreeView.PathSeparator = "|";
-            this.EditorTreeView.SelectedImageIndex = 0;
-            this.EditorTreeView.Size = new System.Drawing.Size(295, 297);
-            this.EditorTreeView.TabIndex = 0;
-            this.EditorTreeView.BeforeSelect += new System.Windows.Forms.TreeViewCancelEventHandler(this.EditorTreeView_BeforeSelect);
-            this.EditorTreeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.EditorTreeView_AfterSelect);
-            this.EditorTreeView.DoubleClick += new System.EventHandler(this.EditorTreeView_DoubleClick);
+            EditorTreeView.Dock = System.Windows.Forms.DockStyle.Fill;
+            EditorTreeView.ImageIndex = 0;
+            EditorTreeView.ImageList = EditorImageList;
+            EditorTreeView.Location = new System.Drawing.Point(0, 0);
+            EditorTreeView.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            EditorTreeView.Name = "EditorTreeView";
+            EditorTreeView.PathSeparator = "|";
+            EditorTreeView.SelectedImageIndex = 0;
+            EditorTreeView.Size = new System.Drawing.Size(295, 297);
+            EditorTreeView.TabIndex = 0;
+            EditorTreeView.BeforeSelect += EditorTreeView_BeforeSelect;
+            EditorTreeView.AfterSelect += EditorTreeView_AfterSelect;
+            EditorTreeView.DoubleClick += EditorTreeView_DoubleClick;
             // 
             // EditorImageList
             // 
-            this.EditorImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.EditorImageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("EditorImageList.ImageStream")));
-            this.EditorImageList.TransparentColor = System.Drawing.Color.Transparent;
-            this.EditorImageList.Images.SetKeyName(0, "Collection_Black.png");
-            this.EditorImageList.Images.SetKeyName(1, "Collection_White.png");
-            this.EditorImageList.Images.SetKeyName(2, "Selection_Black.png");
-            this.EditorImageList.Images.SetKeyName(3, "Selection_White.png");
+            EditorImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            EditorImageList.ImageStream = (System.Windows.Forms.ImageListStreamer)resources.GetObject("EditorImageList.ImageStream");
+            EditorImageList.TransparentColor = System.Drawing.Color.Transparent;
+            EditorImageList.Images.SetKeyName(0, "Collection_Black.png");
+            EditorImageList.Images.SetKeyName(1, "Collection_White.png");
+            EditorImageList.Images.SetKeyName(2, "Selection_Black.png");
+            EditorImageList.Images.SetKeyName(3, "Selection_White.png");
             // 
             // splitContainer3
             // 
-            this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer3.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer3.Margin = new System.Windows.Forms.Padding(0);
-            this.splitContainer3.Name = "splitContainer3";
-            this.splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
+            splitContainer3.Location = new System.Drawing.Point(0, 0);
+            splitContainer3.Margin = new System.Windows.Forms.Padding(0);
+            splitContainer3.Name = "splitContainer3";
+            splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
             // splitContainer3.Panel1
             // 
-            this.splitContainer3.Panel1.Controls.Add(this.EditorPropertyGrid);
-            this.splitContainer3.Panel1MinSize = 130;
+            splitContainer3.Panel1.Controls.Add(EditorPropertyGrid);
+            splitContainer3.Panel1MinSize = 130;
             // 
             // splitContainer3.Panel2
             // 
-            this.splitContainer3.Panel2.Controls.Add(this.EditorCommandPrompt);
-            this.splitContainer3.Panel2MinSize = 90;
-            this.splitContainer3.Size = new System.Drawing.Size(589, 404);
-            this.splitContainer3.SplitterDistance = 270;
-            this.splitContainer3.SplitterWidth = 5;
-            this.splitContainer3.TabIndex = 0;
+            splitContainer3.Panel2.Controls.Add(EditorCommandPrompt);
+            splitContainer3.Panel2MinSize = 90;
+            splitContainer3.Size = new System.Drawing.Size(589, 404);
+            splitContainer3.SplitterDistance = 270;
+            splitContainer3.SplitterWidth = 5;
+            splitContainer3.TabIndex = 0;
             // 
             // EditorPropertyGrid
             // 
-            this.EditorPropertyGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EditorPropertyGrid.HelpVisible = false;
-            this.EditorPropertyGrid.Location = new System.Drawing.Point(0, 0);
-            this.EditorPropertyGrid.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.EditorPropertyGrid.Name = "EditorPropertyGrid";
-            this.EditorPropertyGrid.Size = new System.Drawing.Size(589, 270);
-            this.EditorPropertyGrid.TabIndex = 0;
-            this.EditorPropertyGrid.PropertyValueChanged += new System.Windows.Forms.PropertyValueChangedEventHandler(this.EditorPropertyGrid_PropertyValueChanged);
+            EditorPropertyGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            EditorPropertyGrid.HelpVisible = false;
+            EditorPropertyGrid.Location = new System.Drawing.Point(0, 0);
+            EditorPropertyGrid.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            EditorPropertyGrid.Name = "EditorPropertyGrid";
+            EditorPropertyGrid.Size = new System.Drawing.Size(589, 270);
+            EditorPropertyGrid.TabIndex = 0;
+            EditorPropertyGrid.PropertyValueChanged += EditorPropertyGrid_PropertyValueChanged;
             // 
             // EditorCommandPrompt
             // 
-            this.EditorCommandPrompt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EditorCommandPrompt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EditorCommandPrompt.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.EditorCommandPrompt.Location = new System.Drawing.Point(0, 0);
-            this.EditorCommandPrompt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.EditorCommandPrompt.MaxLength = 100000;
-            this.EditorCommandPrompt.Multiline = true;
-            this.EditorCommandPrompt.Name = "EditorCommandPrompt";
-            this.EditorCommandPrompt.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.EditorCommandPrompt.Size = new System.Drawing.Size(589, 129);
-            this.EditorCommandPrompt.TabIndex = 0;
-            this.EditorCommandPrompt.WordWrap = false;
+            EditorCommandPrompt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            EditorCommandPrompt.Dock = System.Windows.Forms.DockStyle.Fill;
+            EditorCommandPrompt.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            EditorCommandPrompt.Location = new System.Drawing.Point(0, 0);
+            EditorCommandPrompt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            EditorCommandPrompt.MaxLength = 100000;
+            EditorCommandPrompt.Multiline = true;
+            EditorCommandPrompt.Name = "EditorCommandPrompt";
+            EditorCommandPrompt.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            EditorCommandPrompt.Size = new System.Drawing.Size(589, 129);
+            EditorCommandPrompt.TabIndex = 0;
+            EditorCommandPrompt.WordWrap = false;
             // 
             // EditorStatusStrip
             // 
-            this.EditorStatusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.EditorStatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.EditorStatusLabel,
-            this.EditorNodeInfo});
-            this.EditorStatusStrip.Location = new System.Drawing.Point(0, 442);
-            this.EditorStatusStrip.Name = "EditorStatusStrip";
-            this.EditorStatusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
-            this.EditorStatusStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.EditorStatusStrip.Size = new System.Drawing.Size(904, 22);
-            this.EditorStatusStrip.TabIndex = 2;
+            EditorStatusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            EditorStatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { EditorStatusLabel, EditorNodeInfo });
+            EditorStatusStrip.Location = new System.Drawing.Point(0, 442);
+            EditorStatusStrip.Name = "EditorStatusStrip";
+            EditorStatusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
+            EditorStatusStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
+            EditorStatusStrip.Size = new System.Drawing.Size(904, 22);
+            EditorStatusStrip.TabIndex = 2;
             // 
             // EditorStatusLabel
             // 
-            this.EditorStatusLabel.Name = "EditorStatusLabel";
-            this.EditorStatusLabel.Size = new System.Drawing.Size(842, 17);
-            this.EditorStatusLabel.Spring = true;
-            this.EditorStatusLabel.Text = "Waiting...";
-            this.EditorStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            EditorStatusLabel.Name = "EditorStatusLabel";
+            EditorStatusLabel.Size = new System.Drawing.Size(842, 17);
+            EditorStatusLabel.Spring = true;
+            EditorStatusLabel.Text = "Waiting...";
+            EditorStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // EditorNodeInfo
             // 
-            this.EditorNodeInfo.Name = "EditorNodeInfo";
-            this.EditorNodeInfo.Size = new System.Drawing.Size(45, 17);
-            this.EditorNodeInfo.Text = "| Ready";
+            EditorNodeInfo.Name = "EditorNodeInfo";
+            EditorNodeInfo.Size = new System.Drawing.Size(45, 17);
+            EditorNodeInfo.Text = "| Ready";
             // 
             // Editor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(904, 464);
-            this.Controls.Add(this.EditorStatusStrip);
-            this.Controls.Add(this.splitContainer1);
-            this.Controls.Add(this.EditorMenuStrip);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.EditorMenuStrip;
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.MinimumSize = new System.Drawing.Size(912, 478);
-            this.Name = "Editor";
-            this.Text = "Binercover - fork of Binary by MaxHwoy";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Editor_FormClosing);
-            this.Load += new System.EventHandler(this.Editor_Load);
-            this.EditorMenuStrip.ResumeLayout(false);
-            this.EditorMenuStrip.PerformLayout();
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
-            this.splitContainer2.Panel1.ResumeLayout(false);
-            this.splitContainer2.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
-            this.splitContainer2.ResumeLayout(false);
-            this.splitContainer4.Panel1.ResumeLayout(false);
-            this.splitContainer4.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).EndInit();
-            this.splitContainer4.ResumeLayout(false);
-            this.splitContainer5.Panel1.ResumeLayout(false);
-            this.splitContainer5.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer5)).EndInit();
-            this.splitContainer5.ResumeLayout(false);
-            this.splitContainer6.Panel1.ResumeLayout(false);
-            this.splitContainer6.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer6)).EndInit();
-            this.splitContainer6.ResumeLayout(false);
-            this.splitContainer7.Panel1.ResumeLayout(false);
-            this.splitContainer7.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).EndInit();
-            this.splitContainer7.ResumeLayout(false);
-            this.splitContainer8.Panel1.ResumeLayout(false);
-            this.splitContainer8.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer8)).EndInit();
-            this.splitContainer8.ResumeLayout(false);
-            this.splitContainer9.Panel1.ResumeLayout(false);
-            this.splitContainer9.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer9)).EndInit();
-            this.splitContainer9.ResumeLayout(false);
-            this.splitContainer10.Panel1.ResumeLayout(false);
-            this.splitContainer10.Panel1.PerformLayout();
-            this.splitContainer10.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer10)).EndInit();
-            this.splitContainer10.ResumeLayout(false);
-            this.splitContainer3.Panel1.ResumeLayout(false);
-            this.splitContainer3.Panel2.ResumeLayout(false);
-            this.splitContainer3.Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
-            this.splitContainer3.ResumeLayout(false);
-            this.EditorStatusStrip.ResumeLayout(false);
-            this.EditorStatusStrip.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            ClientSize = new System.Drawing.Size(904, 464);
+            Controls.Add(EditorStatusStrip);
+            Controls.Add(splitContainer1);
+            Controls.Add(EditorMenuStrip);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            MainMenuStrip = EditorMenuStrip;
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            MinimumSize = new System.Drawing.Size(912, 478);
+            Name = "Editor";
+            Text = "Binercover - fork of Binary by MaxHwoy";
+            FormClosing += Editor_FormClosing;
+            Load += Editor_Load;
+            EditorMenuStrip.ResumeLayout(false);
+            EditorMenuStrip.PerformLayout();
+            splitContainer1.Panel1.ResumeLayout(false);
+            splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
+            splitContainer1.ResumeLayout(false);
+            splitContainer2.Panel1.ResumeLayout(false);
+            splitContainer2.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer2).EndInit();
+            splitContainer2.ResumeLayout(false);
+            splitContainer4.Panel1.ResumeLayout(false);
+            splitContainer4.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer4).EndInit();
+            splitContainer4.ResumeLayout(false);
+            splitContainer5.Panel1.ResumeLayout(false);
+            splitContainer5.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer5).EndInit();
+            splitContainer5.ResumeLayout(false);
+            splitContainer6.Panel1.ResumeLayout(false);
+            splitContainer6.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer6).EndInit();
+            splitContainer6.ResumeLayout(false);
+            splitContainer7.Panel1.ResumeLayout(false);
+            splitContainer7.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer7).EndInit();
+            splitContainer7.ResumeLayout(false);
+            splitContainer8.Panel1.ResumeLayout(false);
+            splitContainer8.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer8).EndInit();
+            splitContainer8.ResumeLayout(false);
+            splitContainer9.Panel1.ResumeLayout(false);
+            splitContainer9.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer9).EndInit();
+            splitContainer9.ResumeLayout(false);
+            splitContainer10.Panel1.ResumeLayout(false);
+            splitContainer10.Panel1.PerformLayout();
+            splitContainer10.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer10).EndInit();
+            splitContainer10.ResumeLayout(false);
+            splitContainer3.Panel1.ResumeLayout(false);
+            splitContainer3.Panel2.ResumeLayout(false);
+            splitContainer3.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer3).EndInit();
+            splitContainer3.ResumeLayout(false);
+            EditorStatusStrip.ResumeLayout(false);
+            EditorStatusStrip.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
+        }
 
-		}
+        #endregion
 
-		#endregion
-
-		private System.Windows.Forms.MenuStrip EditorMenuStrip;
+        private System.Windows.Forms.MenuStrip EditorMenuStrip;
 		private System.Windows.Forms.ToolStripMenuItem EditorMenuStripMain;
 		private System.Windows.Forms.ToolStripMenuItem EMSMainNewLauncher;
 		private System.Windows.Forms.ToolStripMenuItem EMSMainLoadFiles;
@@ -915,6 +886,7 @@
 		private System.Windows.Forms.ToolStripMenuItem EMSMainImportEndscript;
 		private System.Windows.Forms.ToolStripStatusLabel EditorNodeInfo;
         private System.Windows.Forms.ToolStripMenuItem EMSOptionsSpeedReflect;
+        private System.Windows.Forms.ToolStripMenuItem hideEmptyManagersToolStripMenuItem;
     }
 }
 
